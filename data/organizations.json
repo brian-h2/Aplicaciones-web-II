@@ -1,0 +1,85 @@
+{
+    "Organizaciones": [
+      {
+        "Id_Organizacion": 1,
+        "Nombre": "Manos Unidas",
+        "Ubicacion": "Calle Ficticia 10, Ciudad",
+        "Activa": true,
+        "Status": "Exitosa",
+        "Id_Receta": 1
+      },
+      {
+        "Id_Organizacion": 2,
+        "Nombre": "Red Solidaria",
+        "Ubicacion": "Avenida Solidaria 50, Ciudad",
+        "Activa": true,
+        "Status": "Pendiente",
+        "Id_Receta": 2
+      },
+      {
+        "Id_Organizacion": 3,
+        "Nombre": "Esperanza Activa",
+        "Ubicacion": "Calle Esperanza 123, Ciudad",
+        "Activa": false,
+        "Status": "Fallida",
+        "Id_Receta": 3
+      },
+      {
+        "Id_Organizacion": 4,
+        "Nombre": "Puentes de Vida",
+        "Ubicacion": "Calle Puente 45, Ciudad",
+        "Activa": true,
+        "Status": "Exitosa",
+        "Id_Receta": 4
+      },
+      {
+        "Id_Organizacion": 5,
+        "Nombre": "Sonrisas Compartidas",
+        "Ubicacion": "Avenida Sonrisa 33, Ciudad",
+        "Activa": true,
+        "Status": "Exitosa",
+        "Id_Receta": 5
+      },
+      {
+        "Id_Organizacion": 6,
+        "Nombre": "Luz y Camino",
+        "Ubicacion": "Calle Luz 77, Ciudad",
+        "Activa": false,
+        "Status": "Fallida",
+        "Id_Receta": 6
+      },
+      {
+        "Id_Organizacion": 7,
+        "Nombre": "Sembrando Futuro",
+        "Ubicacion": "Avenida Futuro 88, Ciudad",
+        "Activa": true,
+        "Status": "Pendiente",
+        "Id_Receta": 7
+      },
+      {
+        "Id_Organizacion": 8,
+        "Nombre": "Corazones Abiertos",
+        "Ubicacion": "Calle Corazón 123, Ciudad",
+        "Activa": true,
+        "Status": "Exitosa",
+        "Id_Receta": 8
+      },
+      {
+        "Id_Organizacion": 9,
+        "Nombre": "Juntos Podemos",
+        "Ubicacion": "Calle Unión 10, Ciudad",
+        "Activa": false,
+        "Status": "Pendiente",
+        "Id_Receta": 9
+      },
+      {
+        "Id_Organizacion": 10,
+        "Nombre": "Brigada de Amor",
+        "Ubicacion": "Avenida Amor 44, Ciudad",
+        "Activa": true,
+        "Status": "Exitosa",
+        "Id_Receta": 10
+      }
+    ]
+  }
+  

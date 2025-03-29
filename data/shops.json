@@ -1,0 +1,144 @@
+{
+    "Comercios": [
+      {
+        "Id_Comercio": 1,
+        "Nombre": "Supermercado XYZ",
+        "Activo": true,
+        "Ubicacion": "Calle Ficticia 123, Ciudad",
+        "Productos": [
+          "Arroz",
+          "Lentejas",
+          "Tomates",
+          "Pollo",
+          "Leche"
+        ],
+        "Id_Organizacion": 1
+      },
+      {
+        "Id_Comercio": 2,
+        "Nombre": "Mercado Central",
+        "Activo": true,
+        "Ubicacion": "Avenida Principal 456, Ciudad",
+        "Productos": [
+          "Aceite",
+          "Harina",
+          "Pescado",
+          "Verduras variadas",
+          "Frutas"
+        ],
+        "Id_Organizacion": 2
+      },
+      {
+        "Id_Comercio": 3,
+        "Nombre": "Alimentos del Pueblo",
+        "Activo": true,
+        "Ubicacion": "Barrio Norte 789, Ciudad",
+        "Productos": [
+          "Arroz integral",
+          "Frijoles",
+          "Carne de cerdo",
+          "Leche en polvo",
+          "Cereal"
+        ],
+        "Id_Organizacion": 3
+      },
+      {
+        "Id_Comercio": 4,
+        "Nombre": "La Canasta Solidaria",
+        "Activo": false,
+        "Ubicacion": "Calle Secundaria 101, Ciudad",
+        "Productos": [
+          "Verduras frescas",
+          "Pechugas de pollo",
+          "Cereal integral",
+          "Yogur",
+          "Aceite de oliva"
+        ],
+        "Id_Organizacion": 4
+      },
+      {
+        "Id_Comercio": 5,
+        "Nombre": "Supermercado Local",
+        "Activo": true,
+        "Ubicacion": "Calle Mayor 201, Ciudad",
+        "Productos": [
+          "Manteca",
+          "Papas",
+          "Pollo",
+          "Frutos secos",
+          "Jugo natural"
+        ],
+        "Id_Organizacion": 5
+      },
+      {
+        "Id_Comercio": 6,
+        "Nombre": "Bodega La Nueva",
+        "Activo": true,
+        "Ubicacion": "Avenida 25, Ciudad",
+        "Productos": [
+          "Fruta fresca",
+          "Verduras",
+          "Arroz",
+          "Pasta",
+          "Pechuga de pollo"
+        ],
+        "Id_Organizacion": 6
+      },
+      {
+        "Id_Comercio": 7,
+        "Nombre": "El Buen Comer",
+        "Activo": true,
+        "Ubicacion": "Calle del Sol 502, Ciudad",
+        "Productos": [
+          "Aceite vegetal",
+          "Carnes variadas",
+          "Lácteos",
+          "Verduras",
+          "Harina"
+        ],
+        "Id_Organizacion": 7
+      },
+      {
+        "Id_Comercio": 8,
+        "Nombre": "La Despensa Popular",
+        "Activo": false,
+        "Ubicacion": "Calle del Río 305, Ciudad",
+        "Productos": [
+          "Tomates",
+          "Lentejas",
+          "Frutos secos",
+          "Leche",
+          "Pechugas de pollo"
+        ],
+        "Id_Organizacion": 8
+      },
+      {
+        "Id_Comercio": 9,
+        "Nombre": "Mercado Verde",
+        "Activo": true,
+        "Ubicacion": "Calle Verde 100, Ciudad",
+        "Productos": [
+          "Arroz",
+          "Cereal",
+          "Pescado",
+          "Lentejas",
+          "Fruta"
+        ],
+        "Id_Organizacion": 9
+      },
+      {
+        "Id_Comercio": 10,
+        "Nombre": "Ahorra Más",
+        "Activo": true,
+        "Ubicacion": "Calle Principal 666, Ciudad",
+        "Productos": [
+          "Aceite",
+          "Pechuga de pollo",
+          "Pasta",
+          "Leche",
+          "Harina"
+        ],
+        "Id_Organizacion": 10
+      }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "Recetas": [
+    {
+      "Id_Receta": 1,
+      "Ingredientes": [
+        "Arroz",
+        "Pollo",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina el arroz, luego agrega el pollo y las verduras, cocina todo junto hasta que esté listo."
+    },
+    {
+      "Id_Receta": 2,
+      "Ingredientes": [
+        "Pasta",
+        "Tomato",
+        "Aceite"
+      ],
+      "Instrucciones": "Cocina la pasta y mezcla con el tomate y aceite."
+    },
+    {
+      "Id_Receta": 3,
+      "Ingredientes": [
+        "Frijoles",
+        "Arroz",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina los frijoles y acompáñalos con arroz y verduras."
+    },
+    {
+      "Id_Receta": 4,
+      "Ingredientes": [
+        "Pollo",
+        "Arroz",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina el pollo, luego acompáñalo con arroz y verduras al gusto."
+    },
+    {
+      "Id_Receta": 5,
+      "Ingredientes": [
+        "Carne",
+        "Arroz",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina la carne a la parrilla y acompáñala con arroz y verduras."
+    },
+    {
+      "Id_Receta": 6,
+      "Ingredientes": [
+        "Pescado",
+        "Verduras",
+        "Aceite"
+      ],
+      "Instrucciones": "Cocina el pescado con aceite y acompáñalo con verduras."
+    },
+    {
+      "Id_Receta": 7,
+      "Ingredientes": [
+        "Lentejas",
+        "Arroz",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina las lentejas y acompáñalas con arroz y verduras."
+    },
+    {
+      "Id_Receta": 8,
+      "Ingredientes": [
+        "Pollo",
+        "Papas",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina el pollo y acompáñalo con papas y verduras."
+    },
+    {
+      "Id_Receta": 9,
+      "Ingredientes": [
+        "Pechuga de pollo",
+        "Pasta",
+        "Verduras"
+      ],
+      "Instrucciones": "Cocina la pechuga de pollo y acompáñala con pasta y verduras."
+    },
+    {
+      "Id_Receta": 10,
+      "Ingredientes": [
+        "Fruta",
+        "Yogur",
+        "Frutos secos"
+      ],
+      "Instrucciones": "Mezcla la fruta con el yogur y agrega los frutos secos."
+    }
+  ]
+}
