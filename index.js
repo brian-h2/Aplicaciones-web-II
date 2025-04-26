@@ -31,7 +31,6 @@ let recipesData = JSON.parse(FileRecipes);
 let shopsData = JSON.parse(FileShops);
 
 //Accedemos a la lista de valores
-let valuesOrganizations = organizationsData.Organizaciones;
 let valuesRecipes = recipesData.Recetas;
 let valuesShops = shopsData.Comercios;
 
@@ -47,11 +46,11 @@ const escribirJson = (archivo,data) => { //Permite escribir (Modificar) el json 
 
 //Obtencion de las organizaciones activas.
 app.get('/organizaciones/activas', (req, res) => {
-    res.json(valuesOrganizations.filter(org => org.Activa));
+    res.json(organizationsData.filter(org => org.Activa));
 });
 
 app.get('/organizaciones', (req, res) => {
-    res.json(valuesOrganizations);
+    res.json(organizationsData);
 });
   
 // GET 2 - Comercios que ofrecen arroz
@@ -66,15 +65,15 @@ app.post('/organizaciones', (req, res) => {
     if (!recetaExiste) return res.status(400).json({ error: 'Receta no encontrada' });
   
     const nuevaOrg = {
-      Id_Organizacion: valuesOrganizations.length + 1,
+      Id_Organizacion: organizationsData.length + 1,
       Nombre,
       Ubicacion,
       Activa,
       Status,
       Id_Receta
     };
-    valuesOrganizations.push(nuevaOrg);
-    escribirJson('organizations.json', valuesOrganizations); //Pasamos el json mas los valores a actualizar
+    organizationsData.push(nuevaOrg);
+    escribirJson('organizations.json', organizationsData); //Pasamos el json mas los valores a actualizar
     res.status(201).json(nuevaOrg);
 });
   
