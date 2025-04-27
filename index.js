@@ -91,7 +91,7 @@ app.put('/recetas/:id', (req, res) => {
     const { id } = req.params;
     const { Instrucciones } = req.body;
 
-    const valuesRecipes = leerJSON('recipes.json');
+    const valuesRecipes = leerJson('recipes.json');
     const receta = valuesRecipes.find(r => r.Id_Receta === parseInt(id));
     if (!receta) return res.status(404).json({ error: 'Receta no encontrada' });
   

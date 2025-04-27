@@ -89,6 +89,15 @@
         "Frutos secos"
       ],
       "Instrucciones": "Mezcla la fruta con el yogur y agrega los frutos secos."
+    },
+    {
+      "Id_Receta": 11,
+      "Ingredientes": [
+        "Dos huevos",
+        "Banana",
+        "Avena"
+      ],
+      "Instrucciones": "Mezclar en un boul los tres ingredientes y luego ir llevando el contenido a un sarten hasta que tomen color dorado."
     }
   ]
 }
