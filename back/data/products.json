@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "nombre": "Leche entera 1L",
+    "cantidad": 25,
+    "comercioId": 1,
+    "categoria": "Lácteos",
+    "fecha_vencimiento": "2025-06-10"
+  },
+  {
+    "id": 2,
+    "nombre": "Pan lactal",
+    "cantidad": 40,
+    "comercioId": 2,
+    "categoria": "Panificados",
+    "fecha_vencimiento": "2025-05-25"
+  },
+  {
+    "id": 3,
+    "nombre": "Yogur natural",
+    "cantidad": 15,
+    "comercioId": 3,
+    "categoria": "Lácteos",
+    "fecha_vencimiento": "2025-06-01"
+  },
+  {
+    "id": 4,
+    "nombre": "Manzanas",
+    "cantidad": 60,
+    "comercioId": 4,
+    "categoria": "Frutas",
+    "fecha_vencimiento": "2025-05-28"
+  },
+  {
+    "id": 5,
+    "nombre": "Arroz 1kg",
+    "cantidad": 30,
+    "comercioId": 5,
+    "categoria": "Almacén",
+    "fecha_vencimiento": "2026-01-15"
+  },
+  {
+    "id": 6,
+    "nombre": "Fideos",
+    "cantidad": 20,
+    "comercioId": 6,
+    "categoria": "Almacén",
+    "fecha_vencimiento": "2025-12-30"
+  },
+  {
+    "id": 7,
+    "nombre": "Aceite vegetal",
+    "cantidad": 10,
+    "comercioId": 7,
+    "categoria": "Almacén",
+    "fecha_vencimiento": "2025-11-20"
+  },
+  {
+    "id": 8,
+    "nombre": "Zanahorias",
+    "cantidad": 50,
+    "comercioId": 8,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-05-27"
+  },
+  {
+    "id": 9,
+    "nombre": "Tomates",
+    "cantidad": 20,
+    "comercioId": 9,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-05-27"
+  },
+  {
+    "id": 10,
+    "nombre": "Lechuga",
+    "cantidad": 15,
+    "comercioId": 10,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-05-27"
+  },
+  {
+    "id": 11,
+    "nombre": "Pimiento",
+    "cantidad": 10,
+    "categoria": "Frutas",
+    "fecha_vencimiento": "2025-05-30",
+    "comercioId": 11
+  },
+  {
+    "id": 12,
+    "nombre": "Rabano",
+    "cantidad": 22,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-05-31",
+    "comercioId": 12
+  },
+  {
+    "id": 13,
+    "nombre": "Lentejas",
+    "cantidad": 17,
+    "categoria": "Almacen",
+    "fecha_vencimiento": "2025-05-30",
+    "comercioId": 13
+  }
+]

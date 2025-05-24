@@ -4,6 +4,7 @@ import {readFile, writeFile} from 'fs/promises';
 import { readFileSync, writeFileSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import cors from 'cors';
 
 // Estas dos líneas reemplazan __filename y __dirname
 const __filename = fileURLToPath(import.meta.url);
@@ -18,6 +19,9 @@ const app = express();
 //Agregamos el paquete de json
 app.use(express.json());
 
+app.use(cors({
+  origin: 'http://localhost:5173'
+}))
 const PORT = process.env.PORT || 3000;
 
 
@@ -41,6 +45,37 @@ app.get('/organizaciones', (req, res) => {
     const organizationsData = leerJson('organizations.json');
     res.json(organizationsData);
 });
+
+app.get('/recetas', (req, res) => {
+    const recetasData = leerJson('recipes.json');
+    res.json(recetasData);
+});
+
+app.get('/productos', (req, res) => {
+    const productosData = leerJson('products.json');
+    res.json(productosData)
+})
+
+app.post('/productos', (req, res) => {
+    const {nombre, cantidad, categoria, fecha_vencimiento, comercioId} = req.body;
+    const valuesProductsData = leerJson('products.json');
+
+    const productoExiste = valuesProductsData.some(p => p.nombre.toLowerCase() === nombre.toLowerCase())
+    if(productoExiste) return res.status(400).json({ nroError: 1, error: 'Producto existente'})
+
+    const nuevoProducto = {
+        id: valuesProductsData.length + 1,
+        nombre: nombre,
+        cantidad: cantidad,
+        categoria: categoria,
+        fecha_vencimiento: fecha_vencimiento,
+        comercioId: valuesProductsData.length + 1
+    }
+
+    valuesProductsData.push(nuevoProducto);
+    escribirJson('products.json', valuesProductsData);
+    res.status(201).json({nroError: 0, nuevoProducto})
+})
   
 // GET 2 - Comercios que ofrecen arroz
 app.get('/comercios/producto/arroz', (req, res) => {
