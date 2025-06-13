@@ -102,5 +102,29 @@
     "categoria": "Almacen",
     "fecha_vencimiento": "2025-05-30",
     "comercioId": 13
+  },
+  {
+    "id": 14,
+    "nombre": "Zapallos",
+    "cantidad": 12,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-06-17",
+    "comercioId": 14
+  },
+  {
+    "id": 15,
+    "nombre": "Espinaca",
+    "cantidad": 3,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-06-30",
+    "comercioId": 15
+  },
+  {
+    "id": 16,
+    "nombre": "Mayonesa",
+    "cantidad": 43,
+    "categoria": "Almacen",
+    "fecha_vencimiento": "2025-06-30",
+    "comercioId": 16
   }
 ]

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import swal from 'sweetalert2';
-
+import TicketProduct from "./TicketProduct";
 
 export default function NewProductForm ({onClose, onProductoAgregado}) {
 
@@ -18,7 +18,7 @@ export default function NewProductForm ({onClose, onProductoAgregado}) {
 
         try{
 
-           const camposVacios = Object.values(nuevoProducto).some(valor => valor.trim() === '');
+           const camposVacios = Object.values(nuevoProducto).some(valor => String(valor).trim() === '');
 
             if (camposVacios) {
                 swal.fire({
@@ -51,24 +51,23 @@ export default function NewProductForm ({onClose, onProductoAgregado}) {
                     comercioId: ''
                 })                
             } else {
-                //Se llama a esta funcion permitiendo que el padre agregue el producto sin recargar la pagina
-                onProductoAgregado(data);
-
-                onClose(); //Cerramos formulario
-                Swal.fire({
-                    title: "Producto registrado",
-                    text: "Su producto fue agregado exitosamente a la lista disponible.",
-                    icon: "success"
+                swal.fire({
+                title: "Producto registrado",
+                text: "Su producto fue agregado exitosamente a la lista disponible.",
+                icon: "success"
+                }).then(() => {
+                    //Se llama a esta funcion permitiendo que el padre agregue el producto sin recargar la pagina
+                    onProductoAgregado(data.nuevoProducto);
+                    onClose();
                 });
 
-                //Limpia los valores
                 setNuevoProducto({
                     nombre: '',
                     cantidad: '',
                     categoria: '',
                     fecha_vencimiento: '',
                     comercioId: ''
-                })
+                });
             }
 
         } catch (error) {
@@ -80,6 +79,7 @@ export default function NewProductForm ({onClose, onProductoAgregado}) {
     //Formulario
 
     return (
+        <> 
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
             <div className="bg-white p-6 rounded-lg w-full max-w-md">
                 <h3 className="text-xl font-bold mb-4">Nuevo producto</h3>
@@ -131,6 +131,7 @@ export default function NewProductForm ({onClose, onProductoAgregado}) {
                 </div>
             </div>
         </div>
+    </>
     )
 
 

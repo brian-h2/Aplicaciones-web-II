@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import { getProductos } from '../api/FetchClient.js'
 import NewProductForm from './NewProductForm.jsx';
+import TicketProduct from './TicketProduct.jsx';
 
 export default function Products() {
   const [productos, setProductos] = useState([]);
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   const [categoria, categoriaSeleccionada] = useState('Todas');
+  const [ticketProducto, setTicketProducto] = useState(null);
 
   useEffect(() => {
     getProductos().then(res => setProductos(res.data)).catch(console.error)
@@ -47,7 +49,20 @@ export default function Products() {
       {/* Formulario modal */}
 
       {mostrarFormulario && (
-        <NewProductForm onClose={() => setMostrarFormulario(false)} onProductoAgregado={(productoNuevo) => setProductos(prev => [...prev, productoNuevo])}></NewProductForm>
+        <NewProductForm
+        onClose={() => setMostrarFormulario(false)}
+        onProductoAgregado={(productoNuevo) => {
+          setProductos(prev => [...prev, productoNuevo]);
+          setTicketProducto(productoNuevo); // Mostramos el ticket
+        }}/>
+      )}
+
+      {/* Ticket producto */}
+      {ticketProducto && (
+        <TicketProduct
+          producto={ticketProducto}
+          onClose={() => setTicketProducto(null)}
+        />
       )}
       
 
