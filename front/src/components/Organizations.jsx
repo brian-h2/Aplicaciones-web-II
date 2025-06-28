@@ -9,8 +9,6 @@ export default function Organizations() {
     getOrganizaciones().then(res => setOrgs(res.data)).catch(console.error)
   }, [])
 
-  console.log(orgs)
-
   return (
      <section className="py-6">
       <h2 className="text-3xl font-bold mb-6 text-gray-800">Organizaciones</h2>

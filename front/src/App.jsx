@@ -4,6 +4,8 @@ import Products from './components/Products'
 import Organizations from './components/Organizations'
 import Header from './components/Header'
 import NotFound from './components/NotFound'
+import AuthPage from './components/AuthPage'
+import PrivateRoute from './components/PrivateRoute'
 
 export default function App() {
   return (
@@ -11,9 +13,14 @@ export default function App() {
       <Header />
       <div className="p-4">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={
+            <PrivateRoute>
+              <Home />
+            </PrivateRoute>
+          } />
           <Route path="/productos" element={<Products />} />
           <Route path="/organizaciones" element={<Organizations />} />
+          <Route path="/auth" element={<AuthPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
