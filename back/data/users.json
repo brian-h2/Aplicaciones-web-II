@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "username": "usuarioPrueba",
+    "password": "1234"
+  },
+  {
+    "id": 2,
+    "username": "usuarioPruebaDos",
+    "password": "$2b$10$xeQWvZz3urq.j5a/32ylXu1I/Rb/DNPkLtr8gew7SSaGHJmhcWQMS"
+  }
+]

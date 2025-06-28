@@ -126,5 +126,13 @@
     "categoria": "Almacen",
     "fecha_vencimiento": "2025-06-30",
     "comercioId": 16
+  },
+  {
+    "id": 17,
+    "nombre": "testeando refactoreo",
+    "cantidad": 1,
+    "categoria": "123",
+    "fecha_vencimiento": "2025-06-30",
+    "comercioId": 17
   }
 ]
