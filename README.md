@@ -2,7 +2,7 @@
 
 ## 📖 About
 
-Este repositorio fue creado con el fin de subir los archivos desarrollados durante las clases de la materia **Aplicaciones Web II**. Al finalizar la cursada, contendrá un proyecto web completo utilizando tecnologías como Node.js, Express, manejo de archivos JSON y rutas RESTful.
+Este repositorio fue creado con el fin de subir los archivos desarrollados durante las clases de la materia **Aplicaciones Web II**. Al finalizar la cursada, contendrá un proyecto web completo utilizando tecnologías como Node.js, Express, manejo de archivos JSON, RESTful, React, uso de estilos en Tailwind, manejo de rutas con Axios.
 
 ---
 
@@ -10,28 +10,13 @@ Este repositorio fue creado con el fin de subir los archivos desarrollados duran
 
 - Node.js
 - Express.js
+- React
+- Tailwind
+- Axios
 - JavaScript moderno (ESModules)
 - JSON para persistencia de datos
 - dotenv
 - fs/promises y fs
-
----
-
-## 📂 Estructura del Proyecto
-
-```
-aplicaciones-web-ii/
-│
-├── data/
-│   ├── organizations.json     → Datos de las organizaciones
-│   ├── recipes.json           → Recetas disponibles
-│   └── shops.json             → Comercios y productos
-│
-├── index.js                   → Servidor principal con rutas y lógica de API
-├── .env                       → Variables de entorno (ej: PORT)
-├── package.json               → Dependencias y scripts del proyecto
-└── README.md                  → Este archivo
-```
 
 ---
 
@@ -55,9 +40,15 @@ aplicaciones-web-ii/
 
 4. **Ejecutar el servidor:**
    ```bash
-   node index.js
+   cd/back
+   npm run dev
    ```
 
+5. **Ejecutar el front:**
+   ```bash
+   cd/front
+   npm run dev
+   ```
 ---
 
 ## 📌 Endpoints Implementados
@@ -119,6 +110,8 @@ aplicaciones-web-ii/
 - ✅ Comparaciones cuidadosas (ej: ingredientes) sin distinción entre mayúsculas/minúsculas.
 - ✅ Separación de funciones reutilizables: `leerJson`, `escribirJson`.
 - ✅ Validaciones simples para evitar errores por datos faltantes o duplicados.
+- ✅ Uso de controladores y rutas 
+- ✅ Implementacion de JWT para generacion de token y mantener una sesion segura para el usuario
 
 ---
 
