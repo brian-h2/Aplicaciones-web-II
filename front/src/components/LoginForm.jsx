@@ -20,7 +20,11 @@ const LoginForm = ({ onSwitch }) => {
         localStorage.setItem('token', data.token);
         navigate('/')
     } catch (error) {
-        alert(error.response?.data?.message || 'Error al iniciar sesión');
+       Swal.fire({
+        title: 'Error!',
+        text: (error.response?.data?.message || 'Error al iniciar sesión'),
+        icon: 'error',
+      })
     }
   }
 

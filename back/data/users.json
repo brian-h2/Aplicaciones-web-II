@@ -6,12 +6,7 @@
   },
   {
     "id": 2,
-    "username": "usuarioPruebaDos",
-    "password": "$2b$10$xeQWvZz3urq.j5a/32ylXu1I/Rb/DNPkLtr8gew7SSaGHJmhcWQMS"
-  },
-  {
-    "id": 3,
-    "username": "Brian",
-    "password": "$2b$10$..gXeH/ylI9Cb7kZLh/areW06sa5eshjwfMgTrHPd53S0a0wlspNi"
+    "username": "brian",
+    "password": "$2b$10$3uafjw2XFdjYJpJb1f1JDeO/N.uFLST5/iLiXeTDCxiQwu4Wvfgbe"
   }
 ]

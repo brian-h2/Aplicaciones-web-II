@@ -134,5 +134,13 @@
     "categoria": "123",
     "fecha_vencimiento": "2025-06-30",
     "comercioId": 17
+  },
+  {
+    "id": 18,
+    "nombre": "Cebolla",
+    "cantidad": 13,
+    "categoria": "Verduras",
+    "fecha_vencimiento": "2025-08-14",
+    "comercioId": 18
   }
 ]

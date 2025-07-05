@@ -51,7 +51,6 @@ export const loginUser = async (req,res) => {
 
     // Esperamos validacion de contraseña 
     const validPassword = await bcrypt.compare(password, userFind.password);
-    console.log(userFind.password, password)
     
     if (!validPassword)
     return res.status(401).json({ error: 'Contraseña inválida' });
