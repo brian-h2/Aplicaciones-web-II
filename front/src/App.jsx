@@ -6,16 +6,18 @@ import Header from './components/Header'
 import NotFound from './components/NotFound'
 import AuthPage from './components/AuthPage'
 import PrivateRoute from './components/PrivateRoute'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="p-4">
+      <div className="p-4" >
         <Routes>
           <Route path="/" element={
             <PrivateRoute>
               <Home />
+              
             </PrivateRoute>
           } />
           <Route path="/productos" element={<Products />} />
@@ -24,6 +26,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      <Footer/>
     </BrowserRouter>
   )
 }
