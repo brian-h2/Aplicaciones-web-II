@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { getOrganizaciones } from '../api/FetchClient.js';
 import { MapPin } from 'lucide-react';
+import MapaOrganizaciones from './MapaOrganizaciones.jsx';
 
 export default function Organizations() {
   const [orgs, setOrgs] = useState([]);
@@ -91,6 +92,8 @@ export default function Organizations() {
           ))}
         </div>
       )}
+      {/* Mapa debajo de la lista */}
+      <MapaOrganizaciones organizaciones={orgsFiltradas} />
 
       {/* Animación de fade-in para las cards */}
       <style jsx>{`
@@ -109,5 +112,6 @@ export default function Organizations() {
         }
       `}</style>
     </section>
+    
   )
 }

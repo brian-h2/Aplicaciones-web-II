@@ -7,12 +7,13 @@ import NotFound from './components/NotFound'
 import AuthPage from './components/AuthPage'
 import PrivateRoute from './components/PrivateRoute'
 import Footer from './components/Footer'
+import 'leaflet/dist/leaflet.css';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="p-4" >
+      <div className="p-4 min-h-screen" >
         <Routes>
           <Route path="/" element={
             <PrivateRoute>

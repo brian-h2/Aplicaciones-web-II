@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="relative flex flex-col justify-center items-center w-full min-h-[80vh] py-16 md:py-24 mb-5"
+        className="relative flex flex-col justify-center items-center w-full min-h-[90vh]"
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: 'cover',
